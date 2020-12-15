@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+ul,
+li {
+  list-style: none; }
+
+ul {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+/*=============Divider============*/
+/**
+   * @param $direction: horizontal vertical both
+   example : @include center(both) || @include center(horizontal) || @include center(vertical)
+   */
+/* ===== Usage ===== */
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em; }
+
+/* ===== Usage ===== */
+div {
+  background-image: url("cute-doggo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/* ====================== 2, Header ====================== */
+.header {
+  height: 80px;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99; }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .header__menu-bar {
+      display: none; }
+    .header__menu-logo {
+      font-size: 1.75rem; }
+      .header__menu-logo a {
+        color: #fff; }
+    .header__menu-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .header__menu-list .list__item {
+        padding-left: 3rem; }
+        .header__menu-list .list__item-link {
+          color: #fff; }
+          .header__menu-list .list__item-link:hover {
+            color: #1abc9c; }
+
+.error, .success, .warning {
+  border: solid 1px;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 10px; }
+
+.error {
+  background: red; }
+
+.success {
+  background: blue; }
+
+.warning {
+  background: yellow; }
+
+/* ====================== 3, Banner ====================== */
+.banner {
+  background-color: #1abc9c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .banner__info {
+    padding-top: 6rem; }
+    .banner__info-avatar {
+      width: 15rem;
+      margin-bottom: 3rem; }
+  .banner__heading {
+    font-size: 4rem;
+    line-height: 3.5rem; }
+  .banner__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25rem 0 1.5rem; }
+  .banner__subheading {
+    font-size: 1.5rem; }
+
+/*# sourceMappingURL=main.css.map */
