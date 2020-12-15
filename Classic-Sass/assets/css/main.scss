@@ -1,0 +1,42 @@
+.header{
+    color: red;
+    background-color: white;
+    .g{
+        background-color: whitesmoke;
+    }
+   &__menu{
+       color: red;
+       &-list{
+           font-size: 20px;
+       }
+       &:hover{
+           background-color: red;
+       }
+       &::placeholder{
+
+       }
+   }
+}
+.error {
+    border: 1px solid gray;
+    background-color: green;
+    &__serious {
+        border-width: 10px;
+    }
+}
+
+
+ $black: #000;
+ $border-radius: 0.25rem;
+  code {
+      border-radius: $border-radius;
+  }
+
+  @mixin text {
+      color: white;
+      font-size: 35px;
+  }
+
+  select {
+      @include text()
+  }

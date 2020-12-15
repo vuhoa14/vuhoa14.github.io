@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classic SASS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://kenwheeler.github.io/slick/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav nav__fixed">
+      <div class="container">
+        <div class="nav__menu">
+          <div class="nav__menu-logo">
+            <div class="menu-logo__icon">
+              <i class="fas fa-union"></i>
+            </div>
+          </div>
+          <a href="" class="nav__menu-icon">
+            <i class="far fa-bars"></i>
+          </a>
+          <ul class="nav__menu-item">
+            <li class="menu-item__link">
+              <a href="" class="item__link-active">
+                Home
+                <i class="fal fa-angle-down"></i>
+              </a>
+              <ul class="item__link-list">
+                <li class="link-list__category">
+                  <a href="">
+                    About
+                    <i class="fal fa-angle-right"></i>
+                  </a>
+                  <ul class="list__category-type">
+                    <li class="category-type__item">
+                      <a href="">About Classic</a>
+                      <i class="fal fa-angle-right"></i>
+                    </li>
+                 </ul>
+                </li>
+              </ul>
+              <ul class="item__link-list">
+                <li class="link-list__category">
+                  <a href="">
+                    About
+                    <i class="fal fa-angle-right"></i>
+                  </a>
+                  <ul class="list__category-type">
+                    <li class="category-type__item">
+                      <a href="">About Classic</a>
+                      <i class="fal fa-angle-right"></i>
+                    </li>
+                 </ul>
+                </li>
+              </ul>
+                 
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Page
+                <i class="fal fa-angle-down"></i>
+              </a>
+              <!-- <ul class="item__link-list">
+                <li class="link-list__category">
+                  <a href="">
+                    About
+                    <i class="fal fa-angle-right"></i>
+                  </a>
+                  <ul class="list__category-type">
+                    <li class="category-type__item">
+                      <a href="">About Classic</a>
+                      <i class="fal fa-angle-right"></i>
+                    </li>
+                 </ul>
+                </li>
+              </ul> -->
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Features
+                <i class="fal fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Works
+                <i class="fal fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Blog
+                <i class="fal fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Shop
+                <i class="fal fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="menu-item__link">
+              <a href="">
+                Exta
+                <i class="fal fa-angle-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6  order-lg-1 order-sm-2">
+            <div class="header__left">
+              <div class="header__left-text">
+                <h3 class="left-text__heading">Think, Design & Create</h3>
+                <h1 class="left-text__subheading">
+                  We grow your business with tools & services
+                </h1>
+                <p>
+                  Wanna start moving things in the right direction? Tell us what
+                  you want to achieve...
+                </p>
+              </div>
+              <a href="" class="btn btn-lg btn-defaut">Buy Uncode</a>
+            </div>
+          </div>
+          <div class="col-md-6 order-lg-2 order-sm-1">
+            <div class="header__right">
+              <img
+                src="assets/images/isometric-icons-online-education-blob-min-uai-1032x1032.png"
+                alt=""
+                class="header__right-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Section For -->
+    <section class="for">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <div class="for__design">
+              <img
+                src="assets/images/isometric-icons-design-development-min-uai-258x258.png"
+                alt=""
+              />
+              <h3 class="for__design-heading">For Design & Development</h3>
+              <p>
+                Lead your organization forward by rallying everyone around your
+                new roadmap.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="for__design">
+              <img
+                src="assets/images/isometric-icons-bars-min-uai-258x258.png"
+                alt=""
+              />
+              <h3 class="for__design-heading">For Statistics & analysis</h3>
+              <p>
+                Consolidate all product ideas and feedback in one place, from
+                colleagues or customers.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="for__design">
+              <img
+                src="assets/images/isometric-icons-puzzle-min-uai-258x258.png"
+                alt=""
+              />
+              <h3 class="for__design-heading">For your Organization</h3>
+              <p>
+                Surface the feature ideas that best address user needs and
+                support your strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section toolkit -->
+    <section class="toolkit">
+      <div class="container">
+        <div class="toolkit__title">
+          <h3 class="toolkit__title-heading">A complete digital toolkit</h3>
+          <span class="toolkit__title-subheading"
+            >We makes it easy for businesses and marketing teams to manage your
+            social account in a single place.</span
+          >
+        </div>
+      </div>
+      <div class="container">
+        <div class="toolkit__img">
+          <img src="assets/images/anh video.jpg" alt="" />
+            <a class="toolkit__img-icon">
+                  <i class="fas fa-play"></i>
+                  <div class="circle" style="animation-delay: 0s"></div>
+          <div class="circle" style="animation-delay: 1s"></div>
+          <div class="circle" style="animation-delay: 2s"></div>
+          <div class="circle" style="animation-delay: 3s"></div>
+          </a>
+      </div>
+    </section>
+    <!-- Section pc -->
+    <section class="qc bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="qc__item">
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-google-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-yahoo-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-samsung-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-youtube-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img src="assets/images/logo-envato-uai-258x116.png" alt="" />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-mailchimp-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img src="assets/images/logo-ebay-min-uai-258x116.png" alt="" />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-microsoft-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+              <a href="" class="qc__item-links">
+                <img
+                  src="assets/images/logo-airbnb-min-uai-258x116.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section fordesign -->
+    <section class="fordesign">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="fordesign__left">
+              <div class="fordesign__left-img">
+                <img src="assets/images/fordesign.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="fordesign__right">
+              <div class="fordesign__right-title">
+                <h5 class="right-title__heading">
+                  <span>For Designers</span>
+                </h5>
+                <h3>
+                  Design and build the design you need fast and accurate online
+                </h3>
+                <p>
+                  Improve users’ experiences by understanding who they are and
+                  how they engage. Collect data throughout the user journey,
+                  integrating online and offline datasets across devices to
+                  create a holistic view. Identify which campaigns drive the
+                  most engagement.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="fordesign__right-subtitle">
+                    <span class="right-subtitle__number">75</span>
+                    <span class="right-subtitle__percent">%</span>
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="fordesign__right-subtitle">
+                    <span class="right-subtitle__number">85</span>
+                    <span class="right-subtitle__percent">%</span>
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="fordesign__right-subtitle">
+                    <span class="right-subtitle__number">95</span>
+                    <span class="right-subtitle__percent">%</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section fordevelopers -->
+    <section class="fordevelopers">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="fordevelopers__left">
+              <div class="fordevelopers__left-title">
+                <div class="h5 left-title__heading">
+                  <span>For Designers</span>
+                </div>
+                <h3>
+                  Easily create and manage great looking contents for your site
+                </h3>
+                <p>
+                  Improve users’ experiences by understanding who they are and
+                  how they engage. Collect data throughout the user journey,
+                  integrating online and offline datasets across devices to
+                  create a holistic view. Identify which campaigns drive the
+                  most engagement.
+                </p>
+              </div>
+            </div>
+
+            <div class="fordevelopers__left-lable">
+              <div class="left-lable__text">
+                <span>Progress</span>
+                <span>80%</span>
+              </div>
+              <div class="left-lable__bar">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="fordevelopers__right">
+              <div class="fordevelopers__right-img">
+                <img src="assets/images/fordeveloper.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section slide -->
+    <section class="slide">
+      <div class="container">
+        <div class="slide__run">
+          <div class="slide__wrap">
+            <div class="slide__wrap-img">
+              <img src="assets/images/slide.jpg" alt="" />
+            </div>
+            <span class="slide__wrap-heading"
+              >We were referred from colleagues of ours. Not only have we been
+              amazed at the depth of understanding, we found ourselves working
+              with a team of friends.</span
+            >
+            <span class="slide__wrap-subheading"
+              >- Fred Moody. CEO, Network Software.</span
+            >
+          </div>
+          <div class="slide__wrap">
+            <div class="slide__wrap-img">
+              <img src="assets/images/slide1.jpg" alt="" />
+            </div>
+            <span class="slide__wrap-heading"
+              >There are design companies, and then there are user experience, design, consulting, interface design, brilliant, and professional. By far one of the worlds best known brands.</span
+            >
+            <span class="slide__wrap-subheading"
+              >- Leslie Williamson. Business Developer.</span
+            >
+          </div>
+          <div class="slide__wrap">
+            <div class="slide__wrap-img">
+              <img src="assets/images/slide2.jpg" alt="" />
+            </div>
+            <span class="slide__wrap-heading"
+              >We hired to organise our business online, simplify our process, create a brand that communicated to our demographic clearly, and increase our sales. We recommend the team!</span
+            >
+            <span class="slide__wrap-subheading"
+              >- Anita Tran. IT Solutions.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section wrapwhite -->
+    <section class="wrapwhite">
+      <div class="container">
+        <div class="row">
+           <div class="col-sm-6 wrapwhite-bg rounded-left">
+            <div class="wrapwhite__item">
+              <span class="wrapwhite__item-price">$19</span>
+              <span class="wrapwhite__item-heading">Monthly Plan</span>
+              <p>
+                This is a demo: rapidiously enhance high-quality best practices
+                for parallel human capital. Conveniently e-enable
+                bricks-and-clicks.
+              </p>
+            </div>
+            <div class="wrapwhite__item-button">
+              <a href="" class="btn btn-accent btn-circle">Subscribe Now</a>
+            </div>
+          </div>
+          <div class="col-sm-6 wrapwhite-bg rounded-right border-left">
+            <div class="wrapwhite__item">
+              <span class="wrapwhite__item-price">$159</span>
+              <span class="wrapwhite__item-heading">Annual plan</span>
+              <p>
+                This is a demo: rapidiously enhance high-quality best practices
+                for parallel human capital. Conveniently e-enable
+                bricks-and-clicks.
+              </p>
+              <div class="wrapwhite__item-button">
+                <a href="" class="btn btn-accent btn-circle">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+           <div class="wrapwhite__main">
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__responsive">
+          <div class="col-sm-3 col-md-25">
+            <div class="footer__text">
+              <h4 class="footer__text-title">Headquarter</h4>
+              <p>
+                9876 Design Blvd,
+                <br />
+
+                Suite 543, Beverly Hills,
+                <br />
+                CA 90212
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-25">
+            <div class="footer__text">
+              <h4 class="footer__text-title">Customers</h4>
+              <p>
+                <a href="">Customer Care</a>
+                <br />
+
+                <a href="">Returns and Refunds</a>
+                <br />
+                <a href="">Privacy Policy</a>
+                <br />
+                <a href="">Terms of Use</a>
+                <br />
+                <a href="">Condition of Sale</a>
+                <br />
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-25">
+            <div class="footer__text">
+              <h4 class="footer__text-title">Services</h4>
+              <p>
+                <a href="">Opening your Account</a>
+                <br />
+
+                <a href="">How To Shop</a>
+                <br />
+                <a href="">Shipping</a>
+                <br />
+                <a href="">Track your Order</a>
+                <br />
+                <a href="">Store Locator</a>
+                <br />
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-25">
+            <div class="footer__text">
+              <h4 class="footer__text-title">
+                <span>
+                  <i class="fab fa-cc-visa"></i>
+                </span>
+                <span>
+                  <i class="fab fa-cc-mastercard"></i>
+                </span>
+                <span>
+                  <i class="fab fa-cc-paypal"></i>
+                </span>
+                <span>
+                  <i class="fab fa-stripe"></i>
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 copyright__social">
+            <div class="copyright__social-link">
+              <p>© 2020 Uncode.
+              <span>All rights reserved</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 copyright__social">
+            <div class="copyright__social-item">
+              <a href="" class="social-item__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="social-item__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="social-item__link">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+              <a href="" class="social-item__link">
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a href="" class="social-item__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Social -->
+    <div class="social">
+      <div class="social__list">
+        <div class="social__list-link">
+          <i class="fal fa-cog"></i>
+          <!-- <span>Quick Options</span> -->
+        </div>
+        <div class="social__list-link">
+          <i class="fal fa-comment-alt"></i>
+          <!-- <span>Presale Chat</span> -->
+        </div>
+        <div class="social__list-link">
+         <i class="fal fa-heart"></i>
+          <!-- <span>Showcase</span> -->
+        </div>
+        <div class="social__list-link">
+          <i class="far fa-tv"></i>
+          <!-- <span>Promo Video</span> -->
+        </div>
+        <div class="social__list-link">
+          <i class="fal fa-calculator"></i>
+          <!-- <span>Wireframes</span> -->
+        </div>
+        <div class="social__list-link">
+          <i class="fal fa-book-alt"></i>
+          <!-- <span>Wireframes</span> -->
+        </div>
+        <div class="social__list-link">
+          <i class="fal fa-video"></i>
+          <!-- <span>Wireframes</span> -->
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".qc__item").slick({
+        slidesToShow: 7,
+        sildesToScroll: 1,
+        arrow: true,
+        autoplay: true,
+          responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+      $(".slide__run").slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        
+});
+    </script>
+  </body>
+</html>

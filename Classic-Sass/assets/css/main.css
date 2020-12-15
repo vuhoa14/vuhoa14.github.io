@@ -1,0 +1,26 @@
+.header {
+  color: red;
+  background-color: white; }
+  .header .g {
+    background-color: whitesmoke; }
+  .header__menu {
+    color: red; }
+    .header__menu-list {
+      font-size: 20px; }
+    .header__menu:hover {
+      background-color: red; }
+
+.error {
+  border: 1px solid gray;
+  background-color: green; }
+  .error__serious {
+    border-width: 10px; }
+
+code {
+  border-radius: 0.25rem; }
+
+select {
+  color: white;
+  font-size: 35px; }
+
+/*# sourceMappingURL=main.css.map */

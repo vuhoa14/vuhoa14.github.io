@@ -1,0 +1,829 @@
+/* 
+Theme Name:             VU VAN HOA
+Theme Description: CLASSIC SASS
+Author: 
+version
+ */
+
+ /* 
+ ===============================Table of Content===============================
+ 1. Setting
+ 2. Navigation
+ 3. header
+ 4. Section for
+ 5. Section toolkit
+ 6. Section pc
+ 7. Section fordesign
+ 8. Section developers
+ 9. Section slide
+ 10. Section wrapwhite
+ 11. Footer
+ 12. Copyright
+ 13. Social
+ */
+
+  /* ===============================1. Setting=============================== */
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     list-style: none;
+ }
+
+ body {
+    font-family: var(--font-family)
+    
+ }
+ ul li {
+     list-style: none;
+ }
+ a {
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: none;
+ }
+
+ :root {
+     --font-family: 'Quicksand', sans-serif;
+     --font-family1: 'x8mv5kd2', 'Roboto', sans-serif;
+ }
+
+ .btn-lg {
+     font-size: 15px;
+    padding: 14px 40px 14px 40px;
+     font-weight: 500;
+     font-family: 'Quicksand';
+}
+
+.btn-defaut {
+    color: #303133;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 10em;
+}
+
+.btn-defaut:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.btn-accent {
+    color: #ffffff;
+    background-color: #e9168c;
+    border-color: #e9168c
+}
+
+.btn-accent:hover {
+    background-color: transparent;
+    border-color: #e9168c;
+}
+
+.btn-circle {
+    border-radius: 10em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+/* ===============================2. Navigation=============================== */
+
+ .nav {}
+
+ .nav.nav__fixed {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1;
+ }
+
+ .nav .nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0px;
+    
+}
+ .nav .nav__menu .nav__menu-logo{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+@media (min-width:992px) {
+    .nav .nav__menu .nav__menu-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+ .nav .nav__menu .nav__menu-logo .menu-logo__icon{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+}
+
+.nav .nav__menu .nav__menu-icon {
+    font-family: var(--font-family1);
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+@media (min-width:992px) {
+    .nav .nav__menu .nav__menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+      .nav .nav__menu .nav__menu-icon{
+         display: block;
+         font-size: 20px;
+     }
+}
+
+ .nav .nav__menu .nav__menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: unset;
+}
+
+@media (max-width:992px) {
+    .nav .nav__menu .nav__menu-item {
+        display: none;
+    }
+}
+ .nav .nav__menu .nav__menu-item .menu-item__link{
+    padding: 0px 14px;
+}
+ .nav .nav__menu .nav__menu-item .menu-item__link i{
+    padding: 0 0 0 9px;
+}
+
+ .nav .nav__menu .nav__menu-item .menu-item__link a.item__link-active {
+     color: rgba(255,255,255,.5);
+ }
+
+ .nav .nav__menu .nav__menu-item .menu-item__link a{
+   font-size: 13px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: white;
+    line-height: 14px;
+}
+
+.nav .nav__menu .nav__menu-item .menu-item__link a:hover {
+    color: rgba(255,255,255,.5);
+}
+
+/* ===============================3 Header=============================== */
+
+.header {
+    background-image: url(https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2019/08/texture-geometric-shapes-colors-min-uai-2064x1143.png),linear-gradient(to left,#6442ff 0%,#9012fe 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 10.5rem; */
+     padding-bottom: 6rem;
+}
+
+.header__left {
+    color: white;
+    padding: 72px 0px;
+    text-align: left;
+}
+
+.header__left .header__left-text{}
+.header__left .header__left-text .left-text__heading{
+    font-size: 17px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    line-height: 29px;
+}
+.header__left .header__left-text .left-text__subheading{
+    font-family: 'Quicksand';
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+}
+
+@media (max-width:320px) {
+    .header__left .header__left-text .left-text__subheading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .header__left .header__left-text .left-text__subheading {
+        font-size: 33.333333333333px;
+        line-height: 1.2;
+    }
+}
+
+.header__left .header__left-text p{
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+.header__right {
+    max-width: 600px;
+}
+
+.header__right .header__right-img{
+    width: 100%;
+    height: auto;
+}
+
+/* ===============================4. Section for=============================== */
+
+.for  {}
+
+.for .for__design{
+    padding: 108px 0px;
+    padding-left: 36px;
+    
+}
+
+@media (max-width:567px) {
+    .for .for__design  {
+        padding: 36px 36px;     
+    }
+}
+
+
+.for .for__design img{
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+    height: auto;
+}
+.for .for__design .for__design-heading{
+    font-family: 'Quicksand';
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #303133;
+    padding-top: 20px;
+}
+.for .for__design p{
+    margin-top: 18px;
+    color: #777;
+    font-family: 'Quicksand';
+    font-size: 15px;
+}
+
+/* ===============================5. Section toolkit=============================== */
+
+.toolkit {
+     background-image: url(https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2019/08/texture-geometric-shapes-colors-min-uai-2064x1143.png),linear-gradient(to left,#6442ff 0%,#9012fe 100%);
+}
+
+.toolkit .toolkit__img {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.toolkit .toolkit__img img{
+}
+.toolkit .toolkit__img-icon{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.toolkit .toolkit__img-icon i {
+    font-size: 20px;z-index: 2;
+    position: absolute;
+    top: 50%;left: 50%;transform:
+     translate(-30%, -50%);}
+
+.circle {
+        border-radius: 50%;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        opacity: 0;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        animation: scaleIn 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+        box-shadow: 0 0 0 0.25em #fff;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
+}
+
+.toolkit .toolkit__title{
+    color: white;
+    text-align: center;
+    padding-top: 162px;
+    padding-left: 36px;
+    padding-right: 36px;
+    max-width: 696px;
+    margin: auto;
+}
+
+@media (max-width:567px) {
+    .toolkit .toolkit__title {
+        padding: 108px 36px 0px 36px;
+    }
+}
+
+.toolkit .toolkit__title .toolkit__title-heading{
+    font-family: 'Quicksand';
+    font-size: 35px;
+    font-weight: 500;
+}
+.toolkit .toolkit__title .toolkit__title-subheading{
+    font-family: 'Quicksand';
+    font-size: 24px;
+    font-weight: 300;
+}
+.toolkit .toolkit__img{
+    width: 100%;
+    max-width: none;
+    display: block;
+    z-index: 1;
+    margin-bottom: -50px;
+    padding-top: 45px;
+}
+
+/* ===============================6. Section pc=============================== */
+
+.qc {
+    padding: 108px 36px;
+}
+
+@media (max-width:567px) {
+    .qc {
+        padding: 72px 36px;
+    }
+}
+
+.qc .qc__item {}
+.qc .qc__item  .qc__item{
+   
+}
+.qc .qc__item  .qc__item .qc__item-links{}
+.qc .qc__item  .qc__item .qc__item-links img{
+    width: 100%;
+}
+
+/* ===============================7. Section fordesign=============================== */
+
+.fordesign {
+    padding: 108px 36px;
+}
+
+@media (max-width:567px) {
+    .fordesign {
+        padding: 72px 36px;
+    }
+}
+
+.fordesign .fordesign__left{}
+.fordesign .fordesign__left .fordesign__left-img{}
+.fordesign .fordesign__right{
+    padding: 72px 0px 72px 72px;
+}
+
+@media (max-width:567px) {
+    .fordesign .fordesign__right {
+        padding: 0px;
+        text-align: center;
+        padding-top: 36px;
+    }
+}
+
+.fordesign .fordesign__right .fordesign__right-title{}
+.fordesign .fordesign__right .fordesign__right-title .right-title__heading{
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #e9168c;
+    line-height: 14px;
+}
+.fordesign .fordesign__right .fordesign__right-title h3{
+    color: #303133;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+@media (max-width:567px) {
+    .fordesign .fordesign__right .fordesign__right-title h3 {
+        font-size: 32px;
+    }
+}
+
+
+.fordesign .fordesign__right .fordesign__right-title p{
+    font-size: 15px;
+    color: #777777;
+    line-height: 26px;
+    margin-top: 18px;
+    margin-bottom: 36px;
+}
+
+.fordesign .fordesign__right .fordesign__right-subtitle {
+    color: #e9168c;
+}
+
+@media(max-width:992px) {
+    .fordesign .fordesign__right .fordesign__right-subtitle {
+        display: none;
+    }
+}
+
+.fordesign .fordesign__right .fordesign__right-subtitle .right-subtitle__number{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.fordesign .fordesign__right .fordesign__right-subtitle .right-subtitle__percent{
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+
+/* ===============================8. Section fordevelopers=============================== */
+
+.fordevelopers {
+    padding: 108px 36px;
+    background: #f7f7f7;
+}
+.fordevelopers .fordevelopers__left{}
+.fordevelopers .fordevelopers__left .fordevelopers__left-title{}
+.fordevelopers .fordevelopers__left .fordevelopers__left-title .left-title__heading{
+     font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #e9168c;
+    line-height: 14px;
+}
+.fordevelopers .fordevelopers__left .fordevelopers__left-title h3{
+    color: #303133;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+}
+.fordevelopers .fordevelopers__left .fordevelopers__left-title p{
+    font-size: 15px;
+    color: #777777;
+    line-height: 26px;
+    margin-top: 18px;
+    margin-bottom: 36px;
+}
+
+.fordevelopers .fordevelopers__left-lable {}
+
+@media (max-width:992px) {
+    .fordevelopers .fordevelopers__left-lable {
+        display: none;
+    }
+}
+
+.fordevelopers .fordevelopers__left-lable .left-lable__text{
+    color: #303133;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 18px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.fordevelopers .fordevelopers__left-lable .left-lable__text span{}
+.fordevelopers .fordevelopers__left-lable .left-lable__bar{
+    position: relative;
+    margin: 5px 0 0 0;
+    padding: 2px 9px 2px 9px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    width: 100%;
+    background-color: rgba(119,119,119,.1);
+}
+.fordevelopers .fordevelopers__left-lable .left-lable__bar span{
+    display: block;
+    position: absolute;
+    height: 100%;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,.025);
+    width: 0%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-clip: padding-box;
+    transition: all 1000ms cubic-bezier(.785,.135,.15,.86);
+    width: 80%;
+    background-color: #e9168c;
+}
+
+.fordevelopers .fordevelopers__right{}
+.fordevelopers .fordevelopers__right .fordevelopers__right-img{}
+
+/* ================================ 9. Section slide=============================== */
+
+.slide {
+   background-image: url(https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2019/08/texture-geometric-shapes-colors-min-uai-2064x1143.png),linear-gradient(to left,#6442ff 0%,#9012fe 100%);
+    padding: 162px 36px;
+    z-index: 2;
+}
+
+@media (max-width:567px) {
+    .slide {
+        padding: 108px 36px;
+    }
+}
+
+.slide .slide__wrap {
+    text-align: center;
+    margin: 27px 0 27px 0;
+    padding: 0 0 0 27px;
+}
+
+@media (max-width:567px) {
+   .slide .slide__wrap {
+      
+       text-align: center;
+    }
+}
+
+.slide .slide__wrap .slide__wrap-img{
+    margin-bottom: 20px;
+}
+.slide .slide__wrap .slide__wrap-img img{
+    max-width: 5em;
+    min-height: 5em;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin: 0 auto;
+}
+.slide .slide__wrap .slide__wrap-heading{
+    font-family: 'x8mv5kd2',Roboto,Sans-Serif;
+    font-size: 29px;
+    color: white;
+    font-weight: 300;
+    
+}
+
+@media (max-width:768px) {
+    .slide .slide__wrap .slide__wrap-heading {
+        font-size: 29px;
+        font-family: 'x8mv5kd2',Roboto,Sans-Serif;
+     
+    }
+}
+@media (max-width:576px) {
+    .slide .slide__wrap .slide__wrap-heading {
+        font-size: 17px;
+        font-family: 'x8mv5kd2',Roboto,Sans-Serif;
+    }
+}
+
+
+
+.slide .slide__wrap .slide__wrap-subheading{
+    display: block;
+    font-size: 14px;
+    margin: 9px 0 0 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    line-height: 25px;
+    /* letter-spacing: -0.02em; */
+}
+
+/* =============================== 10. Section wrapwhite=============================== */
+
+.wrapwhite {
+    background:#1b1d1f;
+    z-index: 2;
+    padding: 0px 36px 108px 36px;
+}
+.wrapwhite {} 
+.wrapwhite .wrapwhite-bg{
+    background-color: white;
+    padding: 72px;
+    text-align: center;
+    height: 408px;
+    z-index: 3;
+    margin-top: -100px;
+} 
+
+@media (min-width: 567px) {
+    .wrapwhite .wrapwhite-bg {
+        padding: 54px 36px;
+        height: 480px;
+    }
+}
+@media (max-width: 992px) {
+    .wrapwhite .wrapwhite-bg {
+        padding: 54px 36px;
+        height: 480px;
+    }
+}
+
+.wrapwhite .wrapwhite__item{} 
+.wrapwhite  .wrapwhite__item .wrapwhite__item-price{
+    font-family: 'Quicksand';
+    font-size: 35px;
+    line-height: 18px;
+    color: #303133;
+    font-weight: 500;
+} 
+.wrapwhite .wrapwhite__item .wrapwhite__item-heading{
+    display: block;
+    color: #303133;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    font-family: 'Quicksand';
+    margin-top: 15px;
+    text-transform: uppercase;
+} 
+.wrapwhite .wrapwhite__item p{
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #777777;
+    margin-top: 18px;
+    padding-bottom: 36px;
+} 
+.wrapwhite .wrapwhite__item-button{
+} 
+
+/* ===============================11. Footer=============================== */
+
+.footer {
+    background-color: #1b1d1f;
+    padding: 0 36px 108px 36px;
+}
+
+@media(max-width:567px) {
+    .footer {
+        text-align: center;
+        padding: 0px 36px 72px 36px;
+    }
+}
+
+.footer .footer__text{}
+.footer .footer__text .footer__text-title{
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+.footer .footer__text  p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Quicksand';
+}
+.footer .footer__text p a{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer .footer__text p a:hover{
+    
+color: #e9168c;
+}
+.footer .footer__text a{}
+.footer .footer__text .footer__text-title span{
+    font-size: 42px;
+}
+
+/* ===============================12. Copyright=============================== */
+
+.copyright {
+    background-color: #141618;
+    padding: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright .copyright__social{
+    /* margin-top: 36px; */
+}
+.copyright .copyright__social .copyright__social-link{}
+.copyright .copyright__social .copyright__social-link p{
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    font-weight: 400;
+}
+.copyright .copyright__social .copyright__social-link p span{
+    color: white;
+}
+.copyright .copyright__social .copyright__social-item{
+    float: right;
+    display: block;
+}
+.copyright .copyright__social .copyright__social-item .social-item__link{
+    padding-right: 9px;
+    padding-left: 9px;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 13px;
+}
+.copyright .copyright__social .copyright__social-item .social-item__link:hover{
+    color: #e9168c;
+}
+
+/* ===============================13. Social=============================== */
+
+.social {
+    position: fixed;
+    top: 40%;
+    right: 30px;
+}
+.social .social__list{
+    background-color: white!important;
+    position: absolute;
+    left: -5px;
+    top: 135px;
+    top: 16%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: -5px 0 15px -1px rgba(0,0,0,.05);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: opacity .2s;
+}
+
+@media (max-width:567px) {
+    .social {
+        display: none;
+    }
+}
+
+.social .social__list-link{
+    width: 35px;
+    height: 28px;
+    position: relative;
+}
+.social .social__list-link i{
+    position: relative;
+    top: 7px;
+    left: 10px;
+    color: #777;
+    font-size: 16px;
+}
+.social .social__list-link span{}
+.social .social__list-link span::after{
+    content: "";
+}
+
+
+/* CUSTOM SLICK */
+.slick-arrow {
+    z-index: 2;
+}
+.slick-arrow::before {
+    color: #0E4A9A;
+}
+.slick-prev {
+    margin-left: 15px;
+}
+.slick-next {
+    margin-right: 15px;
+}
+/*END CUSTOM SLICK */
