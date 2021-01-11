@@ -1,0 +1,219 @@
+/* 
+Theme Name:
+Theme Description: Creative Bootstrap Theme
+Author: 
+version
+ */
+
+ /* 
+ ===============================Table of Content===============================
+ 1. Setting
+ 2. Nav 
+ 3. header.masthead
+ 4. SECTION_ABOUT
+ 5. SECTION_SERVICE
+ 6. SECTION_PORTFOLIO
+ 7. SECTION_DOWLOAD
+ 8. SECTION_CONTACT
+ 9. FOOTER
+ */
+
+  /* ===============================1. Setting=============================== */
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     list-style: none;
+ }
+
+ :root {
+     --font1: 'Poppins', sans-serif;  
+     --font2: 'x8mv5kd2', 'Roboto', sans-serif;
+ }
+
+ body {
+    font-family: var(--font-family)
+    
+ }
+ ul li {
+     list-style: none;
+ }
+ a {
+     text-decoration: none;
+ }
+
+ a:hover {
+     text-decoration: none;
+ }
+
+ .btn-lg {
+    font-size: 15px;
+    padding: 14px 40px 14px 40px;
+ }
+
+.btn-default {
+    color: #303133;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-default:hover {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+ .btn-accent {
+     color: #ffffff;
+    background-color: #e9168c;
+    border-color: #e9168c;
+ }
+ .btn-accent:hover {
+     background-color: #dc097f;
+    border-color: #dc097f;
+ }
+
+
+ /* ===============================2. Header=============================== */
+
+.nav {}
+.nav .nav__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav__menu .nav__menu-logo{
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.nav .nav__menu .nav__menu-logo > a{
+    font-weight: 600;
+    font-family: 'x8mv5kd2',Roboto,Sans-Serif;
+    font-size: 18px;
+}
+.nav .nav__menu .nav__menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .nav__menu .nav__menu-item .menu-item__link {
+    font-size: 12px;
+    padding: 0px 14px 0px 14px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav .nav__menu .nav__menu-item .menu-item__link  a{
+}
+.nav .nav__menu .nav__menu-social{}
+.nav .nav__menu .nav__menu-social .menu-social__link{}
+.nav .nav__menu .nav__menu-social .menu-social__link a{padding: 0px 9px;}
+.nav .nav__menu .nav__menu-social .menu-social__link a i{}
+
+.header {
+    background: radial-gradient(circle at left top,rgb(12,180,206) 9%,rgb(0,108,255) 48%,rgb(100,66,255) 91%);
+    
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    
+    
+}
+.header__masthead {
+    background-image: url(https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2015/10/rawpixel-com-594859-unsplash-min.jpg);
+    background: radial-gradient(circle at left top,rgb(12,180,206) 9%,rgb(0,108,255) 48%,rgb(100,66,255) 91%);
+    
+}
+.header__masthead.bg {
+    background: linear-gradient(to left,#6442ff 0%,#9012fe 100%);
+    
+}
+
+.header .header__masthead .header__masthead-title {
+    margin-top: 86px;
+}
+.header .header__masthead .header__masthead-title .masthead-title__heading {
+    font-size: 75px;
+    font-family: 'Poppins';
+    letter-spacing: -0.05em;
+    color: white;
+    font-weight: 700;
+    padding: 108px 0px;
+}
+.header .header__masthead .header__masthead-title p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.75;
+}
+.header .header__masthead .header__masthead-title a {
+    font-family: 'Poppins';
+    font-weight: 700;
+    min-width: 140px;
+    border-width: 1px;
+    letter-spacing: -0.02em;
+    margin: 0px 9px;
+}
+
+.header__masthead-title img {
+    padding-left: 36px;
+}
+
+.device {
+    padding: 72px 36px;
+}
+.device .device__design{
+    padding-left: 36px;
+    text-align: left;
+}
+.device .device__design .device__design-icon{font-size: 73px;}
+.device .device__design .device__design-icon i{
+    width: 64px;
+    height: 100%;
+    color: #e9168c;
+    /* font-size: 70px; */
+}
+.device .device__design .device__design-heading{
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #303133;
+    letter-spacing: -0.02em;
+    margin-top: 27px;
+}
+.device .device__design p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+.slide {}
+
+.slide .slide__bg {
+    background-color:#1b1d1f;
+    height: 500px;
+    
+
+}
+
+.slide__click {
+    z-index: 5;
+    margin-top: -650px;
+    margin-bottom: 162px;
+}
+
+}
+
+.slide__click .slide__click-img img {
+    width: 283px;
+    height: 500px;
+}
+img {
+    width: 283px;
+    height: 500px;
+}
