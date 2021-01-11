@@ -1,0 +1,85 @@
+/* Vẽ 1 phần tử A1 width 1000 px, height 2000 px
+Vẽ 1 phần tử A2 Luôn trên top màn hình dù có scroll A1.
+Vẽ 1 Phần tử A3: Luôn dưới bottom màn hình dù có scroll A1.
+Vẽ 1 phần tử A4:  Nằm dưới A2 và khi A1 Scroll sẽ scroll theo A1.
+Vẽ 1 phần tử A5:  luôn nằm giữa  màn hình và nằm trong A4, cách trái A4 200px,
+Khi A1 scroll, A5 giữ nguyên cho đến khi khoảng cách từ bottom A5 và bottom A4 = 0 thì A5 bắt đầu scroll theo A4
+Vẽ 1 phần tử A6, luôn nằm giữa  A4 và A6 luôn nằm trên A5. 
+Khi co màn hình về màn hình 780 px thì tất cả phần tử A1->A5 width giảm 1 nửa.
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+.A1 {
+    float: left;
+}
+.A4 {
+    float: right;
+}
+
+.a1 {
+    width: 1000px;
+    height: 2000px;
+    border: 5px solid red;
+}
+.a2 {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    border: 5px solid #ed1c24;
+}
+.a3 {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    border: 5px solid rgb(250, 189, 22);
+}
+.a4 {
+    position: relative;
+    top: 200px;
+    width: 900px;
+    height: 500px;
+    border: 5px solid rgb(12, 207, 12);
+}
+.a5 {
+    width: 400px;
+    height: 200px;
+    border: 5px solid rgb(197, 127, 127);
+    margin-left: 200px;
+    position: sticky;
+    top: calc(50% - 100px);
+}
+.a6 {
+    width: 100px;
+    height: 100px;
+    border: 5px yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.a1,.a2,.a3,.a4,.a5, .a6 {
+    transition: linear 0.1s;
+}
+@media only screen and (max-width: 780px) {
+    .a1 {
+        width: 1000px;
+    }
+    .a2,.a3 {
+        width: 150px;
+    }
+    .a4 {
+        width: 450px;
+    }
+    .a5 {
+        width: 200px;
+    }
+}
